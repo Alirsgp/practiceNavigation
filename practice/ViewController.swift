@@ -14,6 +14,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    @IBOutlet weak var `switch`: UISwitch!
+    
+    @IBAction func CyanButton(_ sender: Any) {
+        if `switch`.isOn {
+            performSegue(withIdentifier: "Cyan", sender: nil)
+        }
+    }
+    
+    @IBAction func RedButton(_ sender: Any) {
+        if `switch`.isOn {
+            performSegue(withIdentifier: "Red", sender: nil)
+        }
+    }
+    
 
 
 }
